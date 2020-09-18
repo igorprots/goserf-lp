@@ -3,11 +3,13 @@ body {
     font-weight: 400;
     font-size: 16px;
     background-color: #171919;
+    color: #fff;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 
 ul,
@@ -22,7 +24,6 @@ li {
     line-height: 32px;
     letter-spacing: 7.33333px;
     text-transform: uppercase;
-    color: #ffffff;
     opacity: 0.5;
     padding-left: 103px;
     position: relative;
