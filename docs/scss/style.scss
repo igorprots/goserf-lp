@@ -47,6 +47,19 @@
     z-index: 3;
 }
 
+.line-animate {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: animdash 3s infinite 6s;
+    -webkit-animation: animdash 3s infinite 6s;
+}
+
+@keyframes animdash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 .menu {
     padding-top: 40px;
 
