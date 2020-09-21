@@ -206,7 +206,6 @@
 }
 
 .surf {
-    padding: 160px 0 120px;
     background-image: url(../img/surf.png);
     background-position: right 200px;
     background-repeat: no-repeat;
@@ -474,6 +473,7 @@
         -moz-transform: translateX(-262px);
         -ms-transform: translateX(-262px);
         -o-transform: translateX(-262px);
+
         &::before {
             left: auto;
             right: 0;
@@ -509,6 +509,95 @@
         left: 50%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+}
+
+.travel {
+    background-image: url(../img/travel-bg.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    .slider-arrows {
+        top: 225px;
+        opacity: 0.25;
+    }
+}
+
+.travel-slider {
+    &__head {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 781px;
+    }
+
+    &__descr {
+        margin-top: -230px;
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        .descr__head {
+            position: relative;
+            padding-right: 78px;
+
+            img {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &__subtitle {
+        text-align: right;
+        padding: 132px 80px 0 0;
+    }
+
+    &__btn {
+        text-align: center;
+    }
+}
+
+.travel-slider__info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.travel-slider__info-item {
+    min-height: 200px;
+    margin-bottom: 66px;
+    position: relative;
+}
+
+.travel-slider__info-subtitle {
+    position: absolute;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+    top: 97px;
+    left: -97px;
+    width: 200px;
+    height: 0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.travel-slider__info-title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    padding-left: 40px;
+    width: 242px;
+
+    span {
+        line-height: 0;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 5.25px;
+        opacity: 0.75;
     }
 }
 
