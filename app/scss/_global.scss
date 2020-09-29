@@ -167,15 +167,91 @@ li {
     }
 }
 
-.travel,
+.holder,
 .surf {
     padding: 160px 0 120px;
 }
-.travel {
+
+.holder {
     padding-bottom: 265px;
+    margin-bottom: 35px;
 }
 
 .container {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+
+
+
+
+
+
+.quantity {
+    display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 45px;
+    height: 42px;
+    line-height: 1.65;
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    position: static;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    right: -25px;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    right: 0;
+}
+
+.star-list {
+    li {
+        display: inline-block;
+
+        &+li {
+            margin-left: -25px;
+        }
+
+    }
+
 }
